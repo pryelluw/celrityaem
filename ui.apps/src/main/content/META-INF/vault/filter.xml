@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/celerityaem/clientlibs"/>
+    <filter root="/apps/celerityaem/components"/>
+    <filter root="/apps/celerityaem/i18n"/>
+</workspaceFilter>

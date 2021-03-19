@@ -1,0 +1,12 @@
+<!--/* landinghero.html */-->
+<div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Landinghero"
+     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${!landinghero.empty}"
+     class="cmp-landinghero">
+    <div class="cmp-landinghero__image"
+         data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
+    </div>
+    <h2 class="cmp-byline__headline">${landinghero.headline}</h2>
+    <h2 class="cmp-byline__subheadline">${landinghero.headline}</h2>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
