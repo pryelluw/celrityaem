@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="nt:unstructured"
-          jcr:title="Byline"
-          sling:resourceType="cq/gui/components/authoring/dialog">
+<jcr:root
+        xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        xmlns:jcr="http://www.jcp.org/jcr/1.0"
+        xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+        xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Celeritynavbar"
+        sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -10,14 +14,8 @@
             <tabs
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/tabs"
-                    maximized="{Boolean}false">
+                    maximized="{Boolean}true">
                 <items jcr:primaryType="nt:unstructured">
-                    <asset
-                            jcr:primaryType="nt:unstructured"
-                            sling:hideResource="{Boolean}false"/>
-                    <metadata
-                            jcr:primaryType="nt:unstructured"
-                            sling:hideResource="{Boolean}true"/>
                     <properties
                             jcr:primaryType="nt:unstructured"
                             jcr:title="Properties"
@@ -33,22 +31,12 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <headline
+                                            <id
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    emptyText="Enter the headline to display."
-                                                    fieldDescription="The headline to display."
-                                                    fieldLabel="Headline"
-                                                    name="./headline"
-                                                    required="{Boolean}true"/>
-                                            <subheadline
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    emptyText="Enter the subheadline to display."
-                                                    fieldDescription="The subheadline to display."
-                                                    fieldLabel="Subheadline"
-                                                    name="./subheadline"
-                                                    required="{Boolean}true"/>
+                                                    fieldDescription="HTML ID attribute to apply to the component."
+                                                    fieldLabel="ID"
+                                                    name="./id"/>
                                         </items>
                                     </column>
                                 </items>
