@@ -2,14 +2,15 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="CelerityAEM"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-03-23T12:49:02.440-04:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/celerityaem/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="celerityaem/components/page"
-    >
+        pageTitle="CelerityAEM">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="celerityaem/components/container"
@@ -24,38 +25,6 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="celerityaem/components/container"
                     layout="responsiveGrid">
-                    <teaser
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="celerityaem/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser>
-                    <teaser_copy
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="celerityaem/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy>
                     <teaser_copy_1579324932
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
                         jcr:primaryType="nt:unstructured"
@@ -72,12 +41,9 @@
                                 width="4"/>
                         </cq:responsive>
                     </teaser_copy_1579324932>
-                    <helloworld
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="celerityaem/components/helloworld"
-                        text="lalala :)"/>
                 </container>
             </container>
         </root>
     </jcr:content>
+    <home/>
 </jcr:root>

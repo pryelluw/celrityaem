@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/libs/screens/core/templates/schedule"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Default schedule"
+        sling:resourceType="screens/core/components/schedule">
+        <idle
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="screens/core/components/channelassignment/absolute"
+            events="[load,idle,timer]"
+            path="/content/screens/we-retail/channels/idle"
+            priority="1"
+            role="idle"
+            schedule="after 6:00 and before 18:00"
+            showTooltip="true"/>
+        <interactive
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="screens/core/components/channelassignment/absolute"
+            conditions="[idle,idle-night]"
+            events="[click,touchend,pointerup]"
+            path="/content/screens/we-retail/channels/virtual-showroom"
+            priority="{Long}1"
+            role="interactive"/>
+        <closed
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="screens/core/components/channelassignment/dynamic"
+            events="[load,idle,timer]"
+            name="closed"
+            priority="2"
+            role="closed"
+            schedule="on sunday"
+            showTooltip="false"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:commerceProvider="we-retail"
+        cq:lastModified="{Date}2021-02-18T11:23:12.816-05:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-02-22T15:17:23.158-05:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:redirectTarget="/content/we-retail/language-masters/en"
+        cq:template="/conf/we-retail/settings/wcm/templates/redirect-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Language Masters"
+        jcr:uuid="c5926de3-4b47-4f19-8e12-d7d022b3a469"
+        sling:resourceType="weretail/components/structure/page"
+        hideInNav="{Boolean}true"/>
+    <en/>
+    <de/>
+    <fr/>
+    <es/>
+    <it/>
+</jcr:root>

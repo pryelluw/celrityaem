@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:social="http://www.adobe.com/social/1.0" xmlns:crx="http://www.day.com/crx/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:ACL">
+    <deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="everyone"
+        rep:privileges="{Name}[jcr:versionManagement,jcr:namespaceManagement,jcr:readAccessControl,rep:indexDefinitionManagement,jcr:nodeTypeDefinitionManagement,rep:write,cq:storeUGC,rep:userManagement,jcr:workspaceManagement,rep:privilegeManagement,jcr:modifyAccessControl,jcr:lifecycleManagement,crx:replicate,jcr:retentionManagement,social:scormRead,jcr:lockManagement]"/>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="everyone"
+        rep:privileges="{Name}[jcr:read]"/>
+</jcr:root>
